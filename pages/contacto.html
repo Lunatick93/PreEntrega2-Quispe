@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Essendidos en la cocina</title>
+    <link rel="shortcut icon" href="img/logotipo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="../img/logotipo.png" alt="Logotipo">
+        <nav>
+            <ul class="menu-nav">
+                <li>
+                    <a href="../index.html">INICIO</a>
+                </li>
+                
+                <li>
+                    <a href="../pages/recetas.html">RECETAS</a>
+                </li>
+
+                <li>
+                    <a href="../pages/productos.html">PRODUCTOS</a>
+                </li>
+
+                <li>
+                    <a href="../pages/clientes.html">CLIENTES</a>
+                </li>
+
+                <li>
+                    <a href="pages/contacto.html">CONTACTO</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+    <main>
+        <h1>Contacto</h1>
+        <h2>Dejanos tus datos y te contactaremos a la brevedad </h2>
+            
+
+        <form>
+            <fieldset>
+                <legend>Datos de contacto</legend>
+                <div class="campos">
+                    <label for="nombre-apellido">Nombre y apellido</label>
+    
+                    <input id="nombre-apellido" type="text" placeholder="Ingresa tu nombre completo" required>
+                </div>
+    
+                <div class="campos">
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                </div>
+    
+                <div class="campos">
+                    <label for="telefono">Telefono</label>
+                    <input type="tel" id="telefono">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos de dirección</legend>
+                <div class="campos">
+                    <label for="direccion">Direccion completa</label>
+                    <input type="text" id="direccion" placeholder="Ingresa tu direccion" required>
+                </div>
+
+                <div class="campos">
+                    <label for="cp">Código postal</label>
+                    <input type="number" id="cp">
+                </div>
+
+                <div class="campos">
+                    <label for="mensaje">Dejanos tus comentarios o mensaje</label>
+
+                    <div class="campos">
+                        <textarea id="mensaje" cols="30" rows="10" placeholder="Tu mensaje debe ser menos a 500 caracteres"></textarea>
+                    </div>
+                   
+                </div>
+
+                <div>
+                    <input type="submit" value="Enviar formulario">
+                    <input type="reset" value="Limpiar el formulario">
+                </div>
+            </fieldset>            
+        </form>
+    </main>
+    <section id="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105633.02489145388!2d-60.2789986362557!3d-34.17109879999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3352dee9f945d%3A0x2bc507de27f28056!2sEssen!5e0!3m2!1ses!2sar!4v1702416481084!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <footer>
+    
+        <img src="../img/logotipo.png" alt="Logotipo">
+        <p>Todos los derechos reservados</p>
+        <p>Realizamos envíos a todo el país - Seguínos en nuestras redes para más información</p>
+    </footer>
+
+
+
+
+</body>
+</html>

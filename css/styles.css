@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+a {
+    text-decoration: none;
+}
+Body {background-color: #a59e9e;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    }
+@font-face {
+    font-family: "Black Buster";
+    src: url(../fonts/Blackbuster.otf);
+}
+
+h1{
+    color: rgb(126, 0, 0);
+    font-family: "Black Buster";
+    margin-top: 50px;
+}
+h2 {
+    font-size: 40px;
+    text-align: center;
+}
+.caja1 {
+    
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+}
+
+.caja1 img {
+    height: 550px;
+    width: 550px;
+    margin-bottom: 20px;
+}
+.caja2 {
+
+    flex: 1;
+    font-size: 38px;
+    text-align: center;
+}
+
+.caja2 p {
+    margin-bottom: 100px;
+}
+
+.caja3 {
+    
+    flex: 1;
+    
+   
+}
+.caja3 iframe {
+    margin-bottom: 20px;
+}
+
+header {
+    background-color: #af2729;
+    padding: 10px 20px; 
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly; /* Cambiado a space-between para distribuir los elementos */
+    align-items: center;
+}
+
+header img {
+    width: 150px;
+    margin-right: 5%;
+    
+   
+    
+}
+
+.menu-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.menu-nav li {
+    list-style-type: none;
+}
+
+.menu-nav a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 30px; 
+    font-family: 'Arial', sans-serif; 
+    font-weight: bold;
+    transition: color 0.3s ease;
+    padding: 8px 15px; /* Ajusta el espacio dentro del botón */
+    border: 3px solid #c5a0a0; /* Añade un borde alrededor del botón */
+    border-radius: 25px; /* Añade esquinas redondeadas */
+}
+
+.menu-nav a:hover {
+    color: #f8f8f8;
+}
+
+
+
+#cajas-insertadas{
+    display: flex;
+    flex-flow: wrap; 
+    gap: 40px;
+    justify-content: center;  
+}
+
+form {
+    text-align: center;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    
+}
+
+.campos {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+fieldset {
+    padding: 20px;
+    
+}
+
+h1{
+    text-align: center;
+    font-size: 60px;
+}
+
+img {
+    max-width: 100%;
+}
+
+#productos img{
+    width: 650px;
+    height: 650px;
+}
+
+#productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+#mapa {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    
+}
+
+footer {
+    
+    background-color: #af2729;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 10%; /*ojo con este valor, puede romper el posicionamiento , si se pone en auto se rompe todo*/
+}
+
+footer img {
+    width: 150px;
+}
+
+/*Cosas de pagina Receta*/
+
+.caja1-receta {
+    
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 40px;
+    
+}
+
+.caja1-receta img {
+    height: 550px;
+    width: 550px;
+    margin-bottom: 20px;
+}
+.caja2-receta {
+
+    flex: 1;
+    font-size: 38px;
+    text-align: center;
+}
+
+.caja2-receta p {
+    margin-bottom: 10px;
+}
+.caja1-receta iframe {
+    margin-bottom: 60px;
+}
