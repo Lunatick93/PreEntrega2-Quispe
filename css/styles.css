@@ -196,7 +196,7 @@ footer img {
 }
 
 /* Estilo para los enlaces del menú de navegación en la versión móvil */
-@media (max-width: 767px) {
+@media (max-width: 320px) {
     .navbar-nav .nav-item {
         width: 100%;
         text-align: center;
@@ -211,6 +211,27 @@ footer img {
     }
 }
 
+/*estilo del body para mobile*/
+@media (max-width: 620px) {
+    .caja2 {
+        font-size: 16px;
+    }
+
+    .caja1 {
+    
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        
+    }
+    .caja1 img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+}
 
 
 /*Cosas de pagina Receta*/
