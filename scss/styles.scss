@@ -1,3 +1,14 @@
+@import 'base/generales';
+@import 'base/variables';
+@import 'utilities/maps';
+@import 'utilities/extend';
+@import 'utilities/mixin';
+
+@import 'components/header';
+@import 'components/footer';
+@import 'pages/index';
+
+
 *{
     margin: 0;
     padding: 0;
@@ -62,67 +73,6 @@ h2 {
     margin-bottom: 20px;
 }
 
-header {
-    background-color: #af2729;
-    padding: 10px 20px; 
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    display: flex;
-    justify-content: space-evenly; /* Cambiado a space-between para distribuir los elementos */
-    align-items: center;
-}
-
-header img {
-    width: 150px;
-    margin-right: 5%;
-    
-   
-    
-}
-/*seccion del menu de navegacion  .menu-nav*/
-/* Estilos para el menú de navegación con Bootstrap */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #af2729;
-    padding: 10px 20px;
-}
-
-.navbar-brand img {
-    width: 150px;
-    margin-right: 20px;
-}
-
-.navbar-nav {
-    display: flex;
-    gap: 20px;
-    margin-right: 5%;
-}
-
-.navbar-nav li {
-    list-style-type: none;
-}
-
-.navbar-nav a {
-    text-decoration: none;
-    color: #000000;
-    font-size: 30px; 
-    font-family: 'Arial', sans-serif; 
-    font-weight: bold;
-    transition: color 0.3s ease;
-    padding: 8px 15px;
-    border: 3px solid #c5a0a0;
-    border-radius: 25px;
-}
-
-.navbar-nav a:hover {
-    color: #f8f8f8;
-}
-
-
-
 
 #cajas-insertadas{
     display: flex;
@@ -183,17 +133,6 @@ img {
     
 }
 
-footer {
-    
-    background-color: #af2729;
-    text-align: center;
-    padding: 1em 0;
-    margin-top: 10%; /*ojo con este valor, puede romper el posicionamiento , si se pone en auto se rompe todo*/
-}
-
-footer img {
-    width: 150px;
-}
 
 /* Estilo para los enlaces del menú de navegación en la versión móvil */
 @media (max-width: 320px) {
