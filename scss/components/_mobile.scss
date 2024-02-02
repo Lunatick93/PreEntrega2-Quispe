@@ -1,5 +1,5 @@
 /* Estilo para los enlaces del menú de navegación en la versión móvil */
-@media (max-width: 320px) {
+@media (max-width: 767px) {
     .navbar-nav .nav-item {
         width: 100%;
         text-align: center;
@@ -15,9 +15,9 @@
 }
 
 /*estilo del body para mobile*/
-@media (max-width: 320px) {
+@media (max-width: 767px) {
     .caja2 {
-        font-size: 16px;
+        font-size: 1em;
     }
 
     .caja1 {
@@ -33,5 +33,15 @@
         height: auto;
     }
 
+}
+
+@media (max-width: 360px){
+    .caja3{
+        @include flex;
+        flex-direction: column;
+        margin: 10px;
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
 
 }

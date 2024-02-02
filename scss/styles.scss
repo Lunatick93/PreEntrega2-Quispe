@@ -1,21 +1,19 @@
-@import 'base/generales';
 @import 'base/variables';
+@import 'base/generales';
+
 @import 'utilities/maps';
 @import 'utilities/extend';
 @import 'utilities/mixin';
 
 @import 'components/header';
 @import 'components/footer';
-@import 'components/mobile';
+
 @import 'pages/index';
 @import 'pages/contacto';
 @import 'pages/productos';
 @import 'pages/clientes';
 @import 'pages/recetas';
 
-
-
-
-
+@import 'components/mobile';
 
 

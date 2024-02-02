@@ -1,28 +1,11 @@
-header {
-    background-color: #af2729;
-    padding: 10px 20px; 
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    display: flex;
-    justify-content: space-evenly; /* Cambiado a space-between para distribuir los elementos */
-    align-items: center;
-}
 
-header img {
-    width: 150px;
-    margin-right: 5%;
-    
-   
-    
-}
 /*seccion del menu de navegacion  .menu-nav*/
 /* Estilos para el menú de navegación con Bootstrap */
-.navbar {
+ .navbar{
+    background-color:map-get($colores, fondo-primario);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #af2729;
     padding: 10px 20px;
 }
 
