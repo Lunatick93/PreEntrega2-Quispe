@@ -1,4 +1,45 @@
 @charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #c5b1b1;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+@font-face {
+  font-family: "Black Buster";
+  src: url(../fonts/Blackbuster.otf);
+}
+h1 {
+  color: rgb(126, 0, 0);
+  font-family: "Black Buster";
+  margin-top: 50px;
+}
+
+h2 {
+  font-size: 40px;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 60px;
+}
+
+img {
+  max-width: 100%;
+}
+
 header {
   background-color: #af2729;
   padding: 10px 20px;
@@ -67,38 +108,37 @@ footer img {
   width: 150px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
+/* Estilo para los enlaces del menú de navegación en la versión móvil */
+@media (max-width: 320px) {
+  .navbar-nav .nav-item {
+    width: 100%;
+    text-align: center;
+  }
+  .navbar-nav .nav-link {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: 3px solid #c5a0a0;
+    margin-bottom: 5px;
+    border-radius: 25px;
+  }
 }
-
-a {
-  text-decoration: none;
+/*estilo del body para mobile*/
+@media (max-width: 320px) {
+  .caja2 {
+    font-size: 16px;
+  }
+  .caja1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .caja1 img {
+    max-width: 100%;
+    height: auto;
+  }
 }
-
-body {
-  background-color: #c5b1b1;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-@font-face {
-  font-family: "Black Buster";
-  src: url(../fonts/Blackbuster.otf);
-}
-h1 {
-  color: rgb(126, 0, 0);
-  font-family: "Black Buster";
-  margin-top: 50px;
-}
-
-h2 {
-  font-size: 40px;
-  text-align: center;
-}
-
 .caja1 {
   flex: 1;
   display: flex;
@@ -137,6 +177,7 @@ h2 {
   justify-content: center;
 }
 
+/*Pagina Contacto*/
 form {
   text-align: center;
   width: 90%;
@@ -157,15 +198,15 @@ fieldset {
   padding: 20px;
 }
 
-h1 {
-  text-align: center;
-  font-size: 60px;
+#mapa {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
 }
 
-img {
-  max-width: 100%;
-}
-
+/*Pagina Productos */
 #productos img {
   width: 650px;
   height: 650px;
@@ -178,45 +219,6 @@ img {
   justify-content: center;
 }
 
-#mapa {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  padding: 20px;
-}
-
-/* Estilo para los enlaces del menú de navegación en la versión móvil */
-@media (max-width: 320px) {
-  .navbar-nav .nav-item {
-    width: 100%;
-    text-align: center;
-  }
-  .navbar-nav .nav-link {
-    display: block;
-    width: 100%;
-    padding: 8px 0;
-    border: 3px solid #c5a0a0;
-    margin-bottom: 5px;
-    border-radius: 25px;
-  }
-}
-/*estilo del body para mobile*/
-@media (max-width: 320px) {
-  .caja2 {
-    font-size: 16px;
-  }
-  .caja1 {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-  .caja1 img {
-    max-width: 100%;
-    height: auto;
-  }
-}
 /*Cosas de pagina Receta*/
 .caja1-receta {
   flex: 1;

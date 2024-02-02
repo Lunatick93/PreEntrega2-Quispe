@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+a {
+    text-decoration: none;
+}
+
+body {background-color: #c5b1b1;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    }
+@font-face {
+    font-family: "Black Buster";
+    src: url(../fonts/Blackbuster.otf);
+}
+
+h1{
+    color: rgb(126, 0, 0);
+    font-family: "Black Buster";
+    margin-top: 50px;
+}
+h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+
+
+h1{
+    text-align: center;
+    font-size: 60px;
+}
+
+img {
+    max-width: 100%;
+}

@@ -1,0 +1,30 @@
+/*Cosas de pagina Receta*/
+
+.caja1-receta {
+    
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 40px;
+    
+}
+
+.caja1-receta img {
+    height: 550px;
+    width: 550px;
+    margin-bottom: 20px;
+}
+.caja2-receta {
+
+    flex: 1;
+    font-size: 38px;
+    text-align: center;
+}
+
+.caja2-receta p {
+    margin-bottom: 10px;
+}
+.caja1-receta iframe {
+    margin-bottom: 60px;
+}
