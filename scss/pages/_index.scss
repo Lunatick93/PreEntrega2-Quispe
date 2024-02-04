@@ -1,13 +1,14 @@
 .caja1 {
-    
+    width: 100%;
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     
 }
 
 .caja1 img {
+    @include flex;
     height: 550px;
     width: 550px;
     margin-bottom: 20px;
@@ -15,22 +16,25 @@
 .caja2 {
 
     flex: 1;
-    font-size: 38px;
+    font-size: 28px;
     text-align: center;
 }
 
 .caja2 p {
-    margin-bottom: 100px;
+    margin-bottom: 10px;
 }
 
 .caja3 {
-    
+    width: 100%;
     flex: 1;
     
    
 }
 .caja3 iframe {
-    margin-bottom: 20px;
+    @include flex;
+    flex-direction: column;
+    width: 90%;
+    margin-bottom: 50px;
 }
 
 

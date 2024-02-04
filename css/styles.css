@@ -16,6 +16,13 @@ body {
   min-height: 100vh;
 }
 
+body {
+  background-image: url(../../img/Fondo.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 @font-face {
   font-family: "Black Buster";
   src: url(../fonts/Blackbuster.otf);
@@ -24,26 +31,32 @@ h1 {
   color: rgb(126, 0, 0);
   font-family: "Black Buster";
   margin-top: 50px;
+  text-align: center;
+  font-size: 60px;
 }
 
 h2 {
+  color: white;
   font-size: 40px;
   text-align: center;
-}
-
-h1 {
-  text-align: center;
-  font-size: 60px;
 }
 
 img {
   max-width: 100%;
 }
 
+p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  color: white;
+}
+
 /*seccion del menu de navegacion  .menu-nav*/
 /* Estilos para el menú de navegación con Bootstrap */
 .navbar {
-  background-color: #af2729;
+  background-color: #c52b2b;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -58,7 +71,7 @@ img {
 .navbar-nav {
   display: flex;
   gap: 20px;
-  margin-right: 5%;
+  margin-right: 3%;
 }
 
 .navbar-nav li {
@@ -72,8 +85,8 @@ img {
   font-family: "Arial", sans-serif;
   font-weight: bold;
   transition: color 0.3s ease;
-  padding: 8px 15px;
-  border: 3px solid #c5a0a0;
+  padding: 4px 10px;
+  border: 3px solid #0e0a0a;
   border-radius: 25px;
 }
 
@@ -82,7 +95,7 @@ img {
 }
 
 footer {
-  background-color: #af2729;
+  background-color: #c52b2b;
   text-align: center;
   padding: 1em 0;
   margin-top: 10%; /*ojo con este valor, puede romper el posicionamiento , si se pone en auto se rompe todo*/
@@ -93,13 +106,18 @@ footer img {
 }
 
 .caja1 {
+  width: 100%;
   flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .caja1 img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
   height: 550px;
   width: 550px;
   margin-bottom: 20px;
@@ -107,20 +125,27 @@ footer img {
 
 .caja2 {
   flex: 1;
-  font-size: 38px;
+  font-size: 28px;
   text-align: center;
 }
 
 .caja2 p {
-  margin-bottom: 100px;
+  margin-bottom: 10px;
 }
 
 .caja3 {
+  width: 100%;
   flex: 1;
 }
 
 .caja3 iframe {
-  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  flex-direction: column;
+  width: 90%;
+  margin-bottom: 50px;
 }
 
 #cajas-insertadas {
@@ -189,11 +214,14 @@ fieldset {
 
 .caja2-receta {
   flex: 1;
-  font-size: 38px;
   text-align: center;
 }
 
 .caja2-receta p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
   margin-bottom: 10px;
 }
 
@@ -210,10 +238,13 @@ fieldset {
   .navbar-nav .nav-link {
     display: block;
     width: 100%;
-    padding: 8px 0;
+    padding: 4px 5px;
     border: 3px solid #c5a0a0;
     margin-bottom: 5px;
     border-radius: 25px;
+  }
+  .navbar-nav a {
+    padding: 4px 10px;
   }
 }
 /*estilo del body para mobile*/
@@ -233,14 +264,45 @@ fieldset {
   }
 }
 @media (max-width: 360px) {
+  body {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #cajas-insertadas {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 40px;
+    justify-content: center;
+  }
+  #cajas-insertadas .caja1,
+  #cajas-insertadas .caja2 {
+    width: 70%;
+  }
+  #cajas-insertadas .caja3 {
+    width: 90%;
+    margin-top: 20px;
+  }
+  #cajas-insertadas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    flex-direction: column;
+  }
   .caja3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1em;
     flex-direction: column;
     margin: 10px;
     max-width: 100%;
     flex-wrap: wrap;
+  }
+  .caja3 iframe {
+    margin-bottom: 20px;
+    height: auto;
   }
 }
 

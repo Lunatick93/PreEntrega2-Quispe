@@ -1,9 +1,9 @@
-@import 'base/variables';
-@import 'base/generales';
-
 @import 'utilities/maps';
 @import 'utilities/extend';
 @import 'utilities/mixin';
+
+@import 'base/variables';
+@import 'base/generales';
 
 @import 'components/header';
 @import 'components/footer';

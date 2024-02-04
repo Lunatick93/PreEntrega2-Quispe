@@ -13,6 +13,13 @@ body {background-color:map-get($colores, fondo-secundario);
     flex-direction: column;
     min-height: 100vh;
     }
+body {
+    background-image: url(../../img/Fondo.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
 @font-face {
     font-family: "Black Buster";
     src: url(../fonts/Blackbuster.otf);
@@ -22,19 +29,22 @@ h1{
     color:map-get($colores, texto-primario);
     font-family: "Black Buster";
     margin-top: 50px;
+    text-align: center;
+    font-size: 60px;
+    
 }
 h2 {
+    color:map-get($colores, texto-secundario);
     font-size: 40px;
     text-align: center;
 }
 
-
-
-h1{
-    text-align: center;
-    font-size: 60px;
-}
-
 img {
     max-width: 100%;
+}
+
+p {
+    @include flex;
+    color:map-get($colores, texto-secundario);
+
 }

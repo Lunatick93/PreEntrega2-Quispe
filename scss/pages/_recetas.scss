@@ -18,11 +18,11 @@
 .caja2-receta {
 
     flex: 1;
-    font-size: 38px;
     text-align: center;
 }
 
 .caja2-receta p {
+    @include flex;
     margin-bottom: 10px;
 }
 .caja1-receta iframe {
