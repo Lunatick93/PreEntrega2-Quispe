@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*color del header #c52b2b   #af2729*/
 * {
   margin: 0;
   padding: 0;
@@ -17,10 +18,11 @@ body {
 }
 
 body {
-  background-image: url("../../img/Fondo.jpg");
+  background-image: url(../img/Fondo-2.jpg);
   background-position: center center;
-  background-size: cover;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 @font-face {
@@ -56,11 +58,11 @@ p {
 /*seccion del menu de navegacion  .menu-nav*/
 /* Estilos para el menú de navegación con Bootstrap */
 .navbar {
-  background-color: #c52b2b;
+  background-color: #614b22;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 1px 50px;
 }
 
 .navbar-brand img {
@@ -95,7 +97,7 @@ p {
 }
 
 footer {
-  background-color: #c52b2b;
+  background-color: #614b22;
   text-align: center;
   padding: 1em 0;
   margin-top: 10%; /*ojo con este valor, puede romper el posicionamiento , si se pone en auto se rompe todo*/
@@ -157,23 +159,76 @@ footer img {
 
 /*Pagina Contacto*/
 form {
-  text-align: center;
-  width: 90%;
   display: flex;
-  align-items: center;
-  gap: 20px;
-  flex-direction: column;
-}
-
-.campos {
-  display: flex;
-  gap: 10px;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 fieldset {
+  width: 48%;
+  border: 1px solid #ccc;
   padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+legend {
+  color: rgb(126, 0, 0);
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.campos {
+  margin-bottom: 15px;
+}
+
+label {
+  color: white;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=number],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+input[type=submit],
+input[type=reset] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type=submit]:hover,
+input[type=reset]:hover {
+  background-color: #45a049;
+}
+
+.imagen-contacto {
+  width: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagen-contacto img {
+  max-width: 100%;
+  height: auto;
 }
 
 #mapa {
@@ -199,6 +254,9 @@ fieldset {
 
 /*Cosas de pagina Receta*/
 .caja1-receta {
+  max-width: auto;
+  margin: 0 auto;
+  padding: 20px;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -212,21 +270,48 @@ fieldset {
   margin-bottom: 20px;
 }
 
+.caja1-receta iframe {
+  margin-bottom: 60px;
+}
+
 .caja2-receta {
+  max-width: auto;
+  margin: 0 auto; /* Centra la caja horizontalmente */
+  padding: 20px;
+  text-align: left;
+  display: flex;
   flex: 1;
+  flex-direction: column;
+}
+
+.seccion-ingredientes {
+  margin-bottom: 20px; /* Espaciado entre secciones */
   text-align: center;
 }
 
-.caja2-receta p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1em;
-  margin-bottom: 10px;
+h2 {
+  color: #ffffff;
 }
 
-.caja1-receta iframe {
-  margin-bottom: 60px;
+h3 {
+  color: #ffffff;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font-size: 80%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px; /* Espaciado entre elementos de la lista */
+  color: #ffffff;
+  text-align: center;
 }
 
 /* Estilo para los enlaces del menú de navegación en la versión móvil */
@@ -264,6 +349,9 @@ fieldset {
   }
 }
 @media (max-width: 766px) {
+  h1 {
+    width: auto;
+  }
   body {
     background-position: center center;
     background-size: cover;
@@ -303,6 +391,35 @@ fieldset {
   .caja3 iframe {
     margin-bottom: 20px;
     height: auto;
+  }
+  /*Receta Mobile*/
+  h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+  }
+  .caja1-receta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    flex-direction: column;
+    margin: 10px;
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+  .caja1-receta img {
+    max-width: 100%;
+    height: auto;
+  }
+  .caja1-receta iframe {
+    width: 90%;
+    height: auto;
+  }
+  .caja2-receta {
+    width: 70%;
+    font-size: 1em;
   }
 }
 

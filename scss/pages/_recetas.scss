@@ -1,7 +1,9 @@
 /*Cosas de pagina Receta*/
 
 .caja1-receta {
-    
+    max-width: auto;
+    margin: 0 auto;
+    padding: 20px;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -15,16 +17,46 @@
     width: 550px;
     margin-bottom: 20px;
 }
-.caja2-receta {
 
+.caja1-receta iframe {
+    margin-bottom: 60px;
+}
+
+.caja2-receta {
+    max-width: auto; 
+    margin: 0 auto; /* Centra la caja horizontalmente */
+    padding: 20px;
+    
+    text-align: left;
+    display: flex;
     flex: 1;
+    flex-direction: column;
+}
+
+.seccion-ingredientes {
+    margin-bottom: 20px; /* Espaciado entre secciones */
     text-align: center;
 }
 
-.caja2-receta p {
-    @include flex;
-    margin-bottom: 10px;
+h2 {
+    color: #ffffff; 
 }
-.caja1-receta iframe {
-    margin-bottom: 60px;
+
+h3 {
+    color: #ffffff; 
+    text-align: center;
+}
+p {
+    text-align: center;
+    font-size: 80%;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px; /* Espaciado entre elementos de la lista */
+    color: #ffffff;
+    text-align: center;
 }

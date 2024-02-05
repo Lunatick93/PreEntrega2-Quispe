@@ -1,13 +1,14 @@
 
 /*seccion del menu de navegacion  .menu-nav*/
 /* Estilos para el menú de navegación con Bootstrap */
- .navbar{
+.navbar{
     background-color:map-get($colores, fondo-primario);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 1px 50px;
 }
+
 
 .navbar-brand img {
     width: 150px;

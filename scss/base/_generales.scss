@@ -13,13 +13,14 @@ body {background-color:map-get($colores, fondo-secundario);
     flex-direction: column;
     min-height: 100vh;
     }
-body {
-    background-image: url('../../img/Fondo.jpg');
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-}
+
+    body {
+        background-image: url(../img/Fondo-2.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
 @font-face {
     font-family: "Black Buster";
     src: url(../fonts/Blackbuster.otf);
