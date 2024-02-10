@@ -5,16 +5,13 @@
     margin: 0 auto;
     padding: 20px;
     flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 40px;
-    
+    @include flex;
+    flex-direction: column;    
 }
-
+/*caja1-receta*/
 .caja1-receta img {
-    height: 550px;
-    width: 550px;
+    @include bordes-redondeados($radio-bordes);
+    @include recorte-img;
     margin-bottom: 20px;
 }
 
@@ -22,41 +19,226 @@
     margin-bottom: 60px;
 }
 
+/*caja2-receta*/
 .caja2-receta {
-    max-width: auto; 
-    margin: 0 auto; /* Centra la caja horizontalmente */
+    max-width: auto;
+    margin: 0 auto;
     padding: 20px;
-    
-    text-align: left;
-    display: flex;
     flex: 1;
-    flex-direction: column;
+    display: flex;
+    align-items: center;
+    flex-direction: column;    
 }
-
-.seccion-ingredientes {
-    margin-bottom: 20px; /* Espaciado entre secciones */
+.caja2-receta img {
+    @include bordes-redondeados($radio-bordes);
+    @include recorte-img;
+    margin-bottom: 20px;
+}
+.caja2-receta p {
+    @include margenes;
     text-align: center;
 }
-
-h2 {
-    color: map-get($colores,texto-secundario );
-}
-
-h3 {
-    color: map-get($colores,texto-secundario );
-    text-align: center;
-}
-p {
-    text-align: center;
-    font-size: 80%;
-}
-ul {
+.caja2-receta ul {
     list-style-type: none;
     padding: 0;
+  
 }
-
-li {
-    margin-bottom: 5px; /* Espaciado entre elementos de la lista */
+.caja2-receta li {
+    margin-bottom: 5px; 
     color: map-get($colores,texto-secundario );
     text-align: center;
 }
+/*caja3-receta*/
+#caja3-receta {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    @include margenes-banner;
+    
+}
+.receta1 {
+    flex: 1 1 25%;
+    width: calc(25% - 10px); 
+    margin-bottom: 20px; 
+    text-align: center; 
+    img{
+        @include recorte-img;
+        @include bordes-redondeados($radio-bordes);
+    }
+    h3 {
+        margin-top: 10px;
+    }
+}
+.receta2 {
+    flex: 1 1 25%;
+    width: calc(25% - 10px); 
+    margin-bottom: 20px;
+    text-align: center; 
+    img{
+        @include recorte-img;
+        @include bordes-redondeados($radio-bordes);
+    }
+    h3 {
+        margin-top: 10px;
+    }
+}
+.receta3 {
+    flex: 1 1 25%;
+    width: calc(25% - 10px);
+    margin-bottom: 20px;
+    text-align: center; 
+    img{
+        @include recorte-img;
+        @include bordes-redondeados($radio-bordes);
+    }
+    h3 {
+        margin-top: 10px;
+    }
+}
+.receta4 {
+    flex: 1 1 25%;
+    width: calc(25% - 10px); 
+    margin-bottom: 20px; 
+    text-align: center; 
+    img{
+        @include recorte-img;
+        @include bordes-redondeados($radio-bordes);
+    }
+    h3 {
+        margin-top: 10px;
+    }
+}
+.receta5 {
+    flex: 1 1 25%;
+    width: calc(25% - 10px); 
+    margin-bottom: 20px; 
+    text-align: center; 
+    img{
+        @include recorte-img;
+        @include bordes-redondeados($radio-bordes);
+    }
+    h3 {
+        margin-top: 10px;
+    }
+}
+.receta6 {
+    flex: 1 1 25%;
+    width: calc(25% - 10px); 
+    margin-bottom: 20px;
+    text-align: center; 
+    img{
+        @include recorte-img;
+        @include bordes-redondeados($radio-bordes);
+    }
+    h3 {
+        margin-top: 10px;
+    }
+}
+.receta7 {
+    flex: 1 1 25%;
+    width: calc(25% - 10px); 
+    margin-bottom: 20px; 
+    text-align: center; 
+    img{
+        @include recorte-img;
+        @include bordes-redondeados($radio-bordes);
+    }
+    h3 {
+        margin-top: 10px;
+    }
+}
+.receta8 {
+    flex: 1 1 25%;
+    width: calc(25% - 10px); 
+    margin-bottom: 20px; 
+    text-align: center; 
+    img{
+        @include recorte-img;
+        @include bordes-redondeados($radio-bordes);
+    }
+    h3 {
+        margin-top: 10px;
+    }
+}
+.receta9 {
+    flex: 1 1 25%;
+    width: calc(25% - 10px);
+    margin-bottom: 20px;
+    text-align: center; 
+    img{
+        @include recorte-img;
+        @include bordes-redondeados($radio-bordes);   
+    }
+    h3 {
+        margin-top: 10px;
+    }
+}
+/*secciones*/
+.seccion-ingredientes {
+    margin-bottom: 20px; 
+    text-align: center;
+}
+.seccion-ingredientes ul{
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 60px;
+
+}
+.seccion-ingredientes li {
+    margin-bottom: 5px; 
+    color: map-get($colores,texto-secundario );
+    text-align: center;
+}
+.seccion-preparacion p {
+    font-size: 18px;
+}
+.seccion-preparacion {
+    margin-top: 70px;
+}
+/*Banners Receta*/
+#banner1-receta {
+    background-color: map-get($colores, fondo-primario);
+    @include margenes-banner;
+}
+#banner2-receta {
+    @include margenes-banner;
+    background-image: url(../img/banner\ 2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    margin-bottom: 40px;
+    
+}
+#banner2-receta h2 {
+    color:black;
+    height: 250px;
+    @include flex;
+    font-size: 30px;
+    margin-left: 400px;
+}
+/*Redes sociales*/
+.boton-instagram {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center; 
+    width: 50px;
+    height: 50px;
+    border: 2px solid #e4405f; 
+    border-radius: 50%;
+    color: #e4405f; 
+  
+  }
+  .boton-instagram img {
+    display: inline-flex;
+    align-items: center;
+    width: 40px; 
+    height: auto;
+    margin-top: 35px;
+    
+  }
+  .boton-instagram:hover {
+    background-color: #e4405f; 
+    color: #fff; 
+  }

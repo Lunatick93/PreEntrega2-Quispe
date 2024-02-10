@@ -1,0 +1,59 @@
+
+/*Redes sociales*/
+.boton-instagram {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center; 
+    width: 50px;
+    height: 50px;
+    border: 2px solid #e4405f; 
+    border-radius: 50%;
+    color: #e4405f; 
+  
+  }
+  .boton-instagram img {
+    display: inline-flex;
+    align-items: center;
+    width: 40px; 
+    height: auto;
+    margin-top: 35px;
+    
+  }
+  .boton-instagram:hover {
+    background-color: #e4405f; 
+    color: #fff; 
+  }
+  
+  #cajas-insertadas-cliente {
+    @include flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+
+    
+  }
+  .caja3-clientes {
+    flex: 1;
+    text-align: center;
+    p{
+        margin: 20px;   
+    flex: 1;
+    font-size: 21px;
+    max-width: 100%;
+    text-align: center;
+    }
+    ul {
+        color: map-get($colores,texto-secundario );
+    }
+    li {
+        font-size: 20px;
+    list-style-type: circle;
+    list-style-position: inside;
+    text-align: center;
+    }
+
+}
+  #banner1-cliente {
+    background-color: map-get($colores, fondo-primario);
+    @include margenes-banner;
+}
+  

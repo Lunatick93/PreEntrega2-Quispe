@@ -1,5 +1,50 @@
 @charset "UTF-8";
 /*color del header #c52b2b   #af2729*/
+@keyframes desplazamiento_derecha {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes desplazamiento_izquierda {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes abajo {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes arriba {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -30,16 +75,25 @@ body {
   src: url(../fonts/Heavitas.ttf);
 }
 h1 {
+  animation: abajo 1s ease forwards;
   color: rgb(134, 3, 3);
   font-family: "Heavitas";
   margin-top: 50px;
   text-align: center;
   font-size: 60px;
+  margin-left: 30px;
+  margin-right: 30px;
+  -webkit-text-stroke: 2px black; /* Borde */
 }
 
 h2 {
   color: white;
   font-size: 40px;
+  text-align: center;
+}
+
+h3 {
+  color: white;
   text-align: center;
 }
 
@@ -53,6 +107,8 @@ p {
   align-items: center;
   font-size: 1em;
   color: white;
+  text-align: center;
+  font-size: 80%;
 }
 
 /*seccion del menu de navegacion  .menu-nav*/
@@ -106,7 +162,6 @@ footer {
   background-color: rgba(175, 48, 16, 0.9450980392);
   text-align: center;
   padding: 1em 0;
-  margin-top: 10%; /*ojo con este valor, puede romper el posicionamiento , si se pone en auto se rompe todo*/
 }
 
 footer img {
@@ -126,13 +181,27 @@ footer img {
   max-width: 400%;
 }
 
+/*caja 1*/
 .caja1 {
-  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  margin-left: 35px;
   width: 100%;
   flex: 1;
-  display: flex;
   flex-direction: column;
+}
+
+.caja1 iframe {
+  display: flex;
+  justify-content: center;
   align-items: center;
+  font-size: 1em;
+  width: 95%;
+  max-height: auto;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .caja1 img {
@@ -140,38 +209,32 @@ footer img {
   justify-content: center;
   align-items: center;
   font-size: 1em;
+  border-radius: 10px;
   height: 550px;
   width: 550px;
   margin-bottom: 20px;
   margin-top: 20px;
+  margin-left: 20px;
 }
 
 .caja1 p {
+  animation: desplazamiento_izquierda 1s ease forwards;
   margin: 20px;
   margin-right: 30px;
   flex: 1;
   font-size: 21px;
   max-width: 100%;
-  text-align: start;
+  text-align: left;
 }
 
-.caja1 ul {
-  margin: 20px;
-}
-
-.caja1 li {
-  font-size: 20px;
-  list-style-type: circle;
-  list-style-position: inside;
-  text-align: start;
-}
-
+/*caja 2*/
 .caja2 {
   flex: 1;
   text-align: center;
 }
 
 .caja2 p {
+  animation: desplazamiento_derecha 1s ease forwards;
   margin: 20px;
   flex: 1;
   font-size: 21px;
@@ -180,10 +243,11 @@ footer img {
 }
 
 .caja2 ul {
-  margin: 20px;
+  color: white;
 }
 
-.caja2 ul li {
+.caja2 li {
+  animation: desplazamiento_derecha 1s ease forwards;
   font-size: 20px;
   list-style-type: circle;
   list-style-position: inside;
@@ -193,13 +257,45 @@ footer img {
 .caja2 img {
   max-width: 100%;
   height: auto;
+  padding-bottom: 35px;
+  border-radius: 10px;
 }
 
+/*caja 3*/
 .caja3 {
-  width: 100%; /* Ancho completo para la caja 3 */
-  margin-right: 0; /* Sin margen derecho para la caja 3 */
   display: flex;
   justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  width: 100%;
+  height: 600px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.caja3 iframe {
+  margin-left: 30px;
+  margin-right: 30px;
+  height: 90%;
+  width: 90%;
+  padding: 10px;
+}
+
+/*caja 4*/
+.caja4 {
+  width: 100%;
+  margin-left: 30px;
+  margin-right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  flex-direction: column;
+}
+
+.caja4 h2 {
+  animation: arriba 1s ease forwards;
+  margin-top: 20px;
 }
 
 /*Pagina Contacto*/
@@ -297,6 +393,67 @@ input[type=reset]:hover {
   justify-content: center;
 }
 
+/*Redes sociales*/
+.boton-instagram {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #e4405f;
+  border-radius: 50%;
+  color: #e4405f;
+}
+
+.boton-instagram img {
+  display: inline-flex;
+  align-items: center;
+  width: 40px;
+  height: auto;
+  margin-top: 35px;
+}
+
+.boton-instagram:hover {
+  background-color: #e4405f;
+  color: #fff;
+}
+
+#cajas-insertadas-cliente {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.caja3-clientes {
+  flex: 1;
+  text-align: center;
+}
+.caja3-clientes p {
+  margin: 20px;
+  flex: 1;
+  font-size: 21px;
+  max-width: 100%;
+  text-align: center;
+}
+.caja3-clientes ul {
+  color: white;
+}
+.caja3-clientes li {
+  font-size: 20px;
+  list-style-type: circle;
+  list-style-position: inside;
+  text-align: center;
+}
+
+#banner1-cliente {
+  background-color: rgba(175, 48, 16, 0.9450980392);
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
 /*Cosas de pagina Receta*/
 .caja1-receta {
   max-width: auto;
@@ -304,12 +461,15 @@ input[type=reset]:hover {
   padding: 20px;
   flex: 1;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  font-size: 40px;
+  font-size: 1em;
+  flex-direction: column;
 }
 
+/*caja1-receta*/
 .caja1-receta img {
+  border-radius: 10px;
   height: 550px;
   width: 550px;
   margin-bottom: 20px;
@@ -319,44 +479,264 @@ input[type=reset]:hover {
   margin-bottom: 60px;
 }
 
+/*caja2-receta*/
 .caja2-receta {
   max-width: auto;
-  margin: 0 auto; /* Centra la caja horizontalmente */
+  margin: 0 auto;
   padding: 20px;
-  text-align: left;
-  display: flex;
   flex: 1;
+  display: flex;
+  align-items: center;
   flex-direction: column;
 }
 
-.seccion-ingredientes {
-  margin-bottom: 20px; /* Espaciado entre secciones */
+.caja2-receta img {
+  border-radius: 10px;
+  height: 550px;
+  width: 550px;
+  margin-bottom: 20px;
+}
+
+.caja2-receta p {
+  margin-left: 30px;
+  margin-right: 30px;
   text-align: center;
 }
 
-h2 {
-  color: white;
-}
-
-h3 {
-  color: white;
-  text-align: center;
-}
-
-p {
-  text-align: center;
-  font-size: 80%;
-}
-
-ul {
+.caja2-receta ul {
   list-style-type: none;
   padding: 0;
 }
 
-li {
-  margin-bottom: 5px; /* Espaciado entre elementos de la lista */
+.caja2-receta li {
+  margin-bottom: 5px;
   color: white;
   text-align: center;
+}
+
+/*caja3-receta*/
+#caja3-receta {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.receta1 {
+  flex: 1 1 25%;
+  width: calc(25% - 10px);
+  margin-bottom: 20px;
+  text-align: center;
+}
+.receta1 img {
+  height: 550px;
+  width: 550px;
+  border-radius: 10px;
+}
+.receta1 h3 {
+  margin-top: 10px;
+}
+
+.receta2 {
+  flex: 1 1 25%;
+  width: calc(25% - 10px);
+  margin-bottom: 20px;
+  text-align: center;
+}
+.receta2 img {
+  height: 550px;
+  width: 550px;
+  border-radius: 10px;
+}
+.receta2 h3 {
+  margin-top: 10px;
+}
+
+.receta3 {
+  flex: 1 1 25%;
+  width: calc(25% - 10px);
+  margin-bottom: 20px;
+  text-align: center;
+}
+.receta3 img {
+  height: 550px;
+  width: 550px;
+  border-radius: 10px;
+}
+.receta3 h3 {
+  margin-top: 10px;
+}
+
+.receta4 {
+  flex: 1 1 25%;
+  width: calc(25% - 10px);
+  margin-bottom: 20px;
+  text-align: center;
+}
+.receta4 img {
+  height: 550px;
+  width: 550px;
+  border-radius: 10px;
+}
+.receta4 h3 {
+  margin-top: 10px;
+}
+
+.receta5 {
+  flex: 1 1 25%;
+  width: calc(25% - 10px);
+  margin-bottom: 20px;
+  text-align: center;
+}
+.receta5 img {
+  height: 550px;
+  width: 550px;
+  border-radius: 10px;
+}
+.receta5 h3 {
+  margin-top: 10px;
+}
+
+.receta6 {
+  flex: 1 1 25%;
+  width: calc(25% - 10px);
+  margin-bottom: 20px;
+  text-align: center;
+}
+.receta6 img {
+  height: 550px;
+  width: 550px;
+  border-radius: 10px;
+}
+.receta6 h3 {
+  margin-top: 10px;
+}
+
+.receta7 {
+  flex: 1 1 25%;
+  width: calc(25% - 10px);
+  margin-bottom: 20px;
+  text-align: center;
+}
+.receta7 img {
+  height: 550px;
+  width: 550px;
+  border-radius: 10px;
+}
+.receta7 h3 {
+  margin-top: 10px;
+}
+
+.receta8 {
+  flex: 1 1 25%;
+  width: calc(25% - 10px);
+  margin-bottom: 20px;
+  text-align: center;
+}
+.receta8 img {
+  height: 550px;
+  width: 550px;
+  border-radius: 10px;
+}
+.receta8 h3 {
+  margin-top: 10px;
+}
+
+.receta9 {
+  flex: 1 1 25%;
+  width: calc(25% - 10px);
+  margin-bottom: 20px;
+  text-align: center;
+}
+.receta9 img {
+  height: 550px;
+  width: 550px;
+  border-radius: 10px;
+}
+.receta9 h3 {
+  margin-top: 10px;
+}
+
+/*secciones*/
+.seccion-ingredientes {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.seccion-ingredientes ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 60px;
+}
+
+.seccion-ingredientes li {
+  margin-bottom: 5px;
+  color: white;
+  text-align: center;
+}
+
+.seccion-preparacion p {
+  font-size: 18px;
+}
+
+.seccion-preparacion {
+  margin-top: 70px;
+}
+
+/*Banners Receta*/
+#banner1-receta {
+  background-color: rgba(175, 48, 16, 0.9450980392);
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#banner2-receta {
+  margin-left: 50px;
+  margin-right: 50px;
+  background-image: url(../img/banner\ 2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+  margin-bottom: 40px;
+}
+
+#banner2-receta h2 {
+  color: black;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  font-size: 30px;
+  margin-left: 400px;
+}
+
+/*Redes sociales*/
+.boton-instagram {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #e4405f;
+  border-radius: 50%;
+  color: #e4405f;
+}
+
+.boton-instagram img {
+  display: inline-flex;
+  align-items: center;
+  width: 40px;
+  height: auto;
+  margin-top: 35px;
+}
+
+.boton-instagram:hover {
+  background-color: #e4405f;
+  color: #fff;
 }
 
 /* Estilo para los enlaces del menú de navegación en la versión móvil */
