@@ -34,3 +34,39 @@
     height: 550px;
     width: 550px;
 }
+
+@mixin recorte-img-productos {
+    height: 300px;
+    width: 300px;
+}
+
+@mixin imagen-productos {
+    flex: 1 1 20%;
+    width: calc(15% - 10px);
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px solid white;
+    img {
+        
+        @include bordes-redondeados($radio-bordes);
+    }
+
+    h3 {
+        margin-top: 10px;
+    }
+}
+@mixin imagen-productos2 {
+    margin-left: 6px;
+    width: calc(33.33% - 20px);
+    margin-bottom: 18px;
+    text-align: center;
+    
+    img {
+        
+        @include bordes-redondeados($radio-bordes);
+    }
+
+    h3 {
+        margin-top: 10px;
+    }
+}

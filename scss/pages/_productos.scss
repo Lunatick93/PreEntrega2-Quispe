@@ -1,12 +1,117 @@
 /*Pagina Productos */
 #productos img{
-    width: 650px;
-    height: 650px;
+    @include recorte-img-productos;
+    @include bordes-redondeados($radio-bordes);
 }
 
 #productos {
+    @include margenes;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+    
+}
+
+#productos-linea {
+    .caja1-productos {
+        width: 100%;
+    
+    @include flex;
+    flex-direction: column;
+    margin-top: 20px;
+    }
+}
+#cajas-de-aqua {
+    display: flex;
+}
+
+.lineas-productos {
+    h2 {
+        background-color: map-get($colores, fondo-primario);
+        @include margenes-banner;
+    }
+}
+/*Linea Aqua*/
+#caja-linea-aqua {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin-right: 40px;
+    .aqua1 {
+        @include imagen-productos2;
+    }
+    .aqua2 {
+        @include imagen-productos2;
+    }
+    .aqua3 {
+        @include imagen-productos2;
+    }
+    .aqua4 {
+        @include imagen-productos2;
+    }
+    .aqua5 {
+        @include imagen-productos2;
+    }
+    .aqua6 {
+        @include imagen-productos2;
+    }
+}
+.aqua-img {
+    height: 650px;
+    width: 450px;
+    @include bordes-redondeados($radio-bordes);
+    background-image: url(../img/Conteporanea-aqua.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+}
+/*Linea Terra*/
+#cajas-de-terra {
+    display: flex;
+    
+}
+#caja-linea-terra {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin-left: 40px;
+    .terra1 {
+        @include imagen-productos2;
+    }
+    .terra2 {
+        @include imagen-productos2;
+    }
+    .terra3 {
+        @include imagen-productos2;
+    }
+    .terra4 {
+        @include imagen-productos2;
+    }
+    .terra5 {
+        @include imagen-productos2;
+    }
+    .terra6 {
+        @include imagen-productos2;
+        img {background-color: map-get($colores, texto-secundario);}
+        
+    }
+}
+.terra-img {
+    height: 650px;
+    width: 450px;
+    @include bordes-redondeados($radio-bordes);
+    background-image: url(../img/contemporaneo-terra.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    margin-right: 50px;
+    margin-left: 6px;
 }

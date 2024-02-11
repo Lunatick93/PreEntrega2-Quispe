@@ -232,6 +232,9 @@ footer img {
   flex: 1;
   text-align: center;
 }
+.caja2 h3 {
+  font-size: 30px;
+}
 
 .caja2 p {
   animation: desplazamiento_derecha 1s ease forwards;
@@ -380,17 +383,277 @@ input[type=reset]:hover {
   padding: 20px;
 }
 
+.banner-contacto {
+  margin-left: 30px;
+  margin-right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.banner-contacto2 {
+  background-color: rgba(175, 48, 16, 0.9450980392);
+  margin-left: 30px;
+  margin-right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+}
+
+/*cajas contacto*/
+#cajas-contacto {
+  display: flex;
+  justify-content: space-between;
+  font-size: 21px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+#cajas-contacto .caja-contacto {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  margin-right: 10px;
+}
+#cajas-contacto .caja-contacto img {
+  height: 550px;
+  width: 550px;
+  border-radius: 10px;
+}
+
 /*Pagina Productos */
 #productos img {
-  width: 650px;
-  height: 650px;
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
 }
 
 #productos {
+  margin-left: 30px;
+  margin-right: 30px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+}
+
+#productos-linea .caja1-productos {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+#cajas-de-aqua {
+  display: flex;
+}
+
+.lineas-productos h2 {
+  background-color: rgba(175, 48, 16, 0.9450980392);
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+/*Linea Aqua*/
+#caja-linea-aqua {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  margin-right: 40px;
+}
+#caja-linea-aqua .aqua1 {
+  margin-left: 6px;
+  width: calc(33.33% - 20px);
+  margin-bottom: 18px;
+  text-align: center;
+}
+#caja-linea-aqua .aqua1 img {
+  border-radius: 10px;
+}
+#caja-linea-aqua .aqua1 h3 {
+  margin-top: 10px;
+}
+#caja-linea-aqua .aqua2 {
+  margin-left: 6px;
+  width: calc(33.33% - 20px);
+  margin-bottom: 18px;
+  text-align: center;
+}
+#caja-linea-aqua .aqua2 img {
+  border-radius: 10px;
+}
+#caja-linea-aqua .aqua2 h3 {
+  margin-top: 10px;
+}
+#caja-linea-aqua .aqua3 {
+  margin-left: 6px;
+  width: calc(33.33% - 20px);
+  margin-bottom: 18px;
+  text-align: center;
+}
+#caja-linea-aqua .aqua3 img {
+  border-radius: 10px;
+}
+#caja-linea-aqua .aqua3 h3 {
+  margin-top: 10px;
+}
+#caja-linea-aqua .aqua4 {
+  margin-left: 6px;
+  width: calc(33.33% - 20px);
+  margin-bottom: 18px;
+  text-align: center;
+}
+#caja-linea-aqua .aqua4 img {
+  border-radius: 10px;
+}
+#caja-linea-aqua .aqua4 h3 {
+  margin-top: 10px;
+}
+#caja-linea-aqua .aqua5 {
+  margin-left: 6px;
+  width: calc(33.33% - 20px);
+  margin-bottom: 18px;
+  text-align: center;
+}
+#caja-linea-aqua .aqua5 img {
+  border-radius: 10px;
+}
+#caja-linea-aqua .aqua5 h3 {
+  margin-top: 10px;
+}
+#caja-linea-aqua .aqua6 {
+  margin-left: 6px;
+  width: calc(33.33% - 20px);
+  margin-bottom: 18px;
+  text-align: center;
+}
+#caja-linea-aqua .aqua6 img {
+  border-radius: 10px;
+}
+#caja-linea-aqua .aqua6 h3 {
+  margin-top: 10px;
+}
+
+.aqua-img {
+  height: 650px;
+  width: 450px;
+  border-radius: 10px;
+  background-image: url(../img/Conteporanea-aqua.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  margin-left: 50px;
+}
+
+/*Linea Terra*/
+#cajas-de-terra {
+  display: flex;
+}
+
+#caja-linea-terra {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  margin-left: 40px;
+}
+#caja-linea-terra .terra1 {
+  margin-left: 6px;
+  width: calc(33.33% - 20px);
+  margin-bottom: 18px;
+  text-align: center;
+}
+#caja-linea-terra .terra1 img {
+  border-radius: 10px;
+}
+#caja-linea-terra .terra1 h3 {
+  margin-top: 10px;
+}
+#caja-linea-terra .terra2 {
+  margin-left: 6px;
+  width: calc(33.33% - 20px);
+  margin-bottom: 18px;
+  text-align: center;
+}
+#caja-linea-terra .terra2 img {
+  border-radius: 10px;
+}
+#caja-linea-terra .terra2 h3 {
+  margin-top: 10px;
+}
+#caja-linea-terra .terra3 {
+  margin-left: 6px;
+  width: calc(33.33% - 20px);
+  margin-bottom: 18px;
+  text-align: center;
+}
+#caja-linea-terra .terra3 img {
+  border-radius: 10px;
+}
+#caja-linea-terra .terra3 h3 {
+  margin-top: 10px;
+}
+#caja-linea-terra .terra4 {
+  margin-left: 6px;
+  width: calc(33.33% - 20px);
+  margin-bottom: 18px;
+  text-align: center;
+}
+#caja-linea-terra .terra4 img {
+  border-radius: 10px;
+}
+#caja-linea-terra .terra4 h3 {
+  margin-top: 10px;
+}
+#caja-linea-terra .terra5 {
+  margin-left: 6px;
+  width: calc(33.33% - 20px);
+  margin-bottom: 18px;
+  text-align: center;
+}
+#caja-linea-terra .terra5 img {
+  border-radius: 10px;
+}
+#caja-linea-terra .terra5 h3 {
+  margin-top: 10px;
+}
+#caja-linea-terra .terra6 {
+  margin-left: 6px;
+  width: calc(33.33% - 20px);
+  margin-bottom: 18px;
+  text-align: center;
+}
+#caja-linea-terra .terra6 img {
+  border-radius: 10px;
+}
+#caja-linea-terra .terra6 h3 {
+  margin-top: 10px;
+}
+#caja-linea-terra .terra6 img {
+  background-color: white;
+}
+
+.terra-img {
+  height: 650px;
+  width: 450px;
+  border-radius: 10px;
+  background-image: url(../img/contemporaneo-terra.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  margin-right: 50px;
+  margin-left: 6px;
 }
 
 /*Redes sociales*/
@@ -423,10 +686,37 @@ input[type=reset]:hover {
   justify-content: center;
   align-items: center;
   font-size: 1em;
-  flex-wrap: wrap;
-  margin-top: 30px;
 }
 
+/*Caja1*/
+.caja1-clientes {
+  flex: 1;
+}
+.caja1-clientes h2 {
+  background-color: rgba(175, 48, 16, 0.9450980392);
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.caja1-clientes ul {
+  color: white;
+}
+.caja1-clientes li {
+  animation: desplazamiento_derecha 1s ease forwards;
+  font-size: 20px;
+  list-style-type: decimal;
+  list-style-position: inside;
+  text-align: start;
+  margin-left: 480px;
+}
+.caja1-clientes p {
+  margin-left: 50px;
+  margin-right: 50px;
+  animation: desplazamiento_derecha 1s ease forwards;
+  font-size: 21px;
+  text-align: center;
+}
+
+/*Caja3*/
 .caja3-clientes {
   flex: 1;
   text-align: center;
@@ -442,16 +732,57 @@ input[type=reset]:hover {
   color: white;
 }
 .caja3-clientes li {
+  animation: desplazamiento_derecha 1s ease forwards;
   font-size: 20px;
   list-style-type: circle;
   list-style-position: inside;
-  text-align: center;
+  text-align: start;
+  margin-left: 540px;
 }
 
 #banner1-cliente {
   background-color: rgba(175, 48, 16, 0.9450980392);
   margin-left: 50px;
   margin-right: 50px;
+}
+
+/*Seccion Canje*/
+#caja-canje {
+  display: flex;
+}
+#caja-canje .caja4-clientes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#caja-canje .caja4-clientes .mitad2 {
+  width: 50%;
+  text-align: center;
+  margin-top: 20px;
+  margin-right: 65px;
+  font-size: 21px;
+}
+#caja-canje .caja4-clientes .mitad2 p {
+  animation: desplazamiento_derecha 1s ease forwards;
+}
+#caja-canje .caja4-clientes .mitad1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  width: 50%;
+  padding: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+#caja-canje .caja4-clientes .mitad1 img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
 }
 
 /*Cosas de pagina Receta*/
@@ -465,6 +796,9 @@ input[type=reset]:hover {
   align-items: center;
   font-size: 1em;
   flex-direction: column;
+}
+.caja1-receta h2 {
+  animation: arriba 1s ease forwards;
 }
 
 /*caja1-receta*/
@@ -488,6 +822,9 @@ input[type=reset]:hover {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+.caja2-receta h2 {
+  animation: arriba 1s ease forwards;
 }
 
 .caja2-receta img {
@@ -678,11 +1015,12 @@ input[type=reset]:hover {
 }
 
 .seccion-preparacion p {
+  animation: desplazamiento_derecha 1s ease forwards;
   font-size: 18px;
 }
 
 .seccion-preparacion {
-  margin-top: 70px;
+  margin-top: 110px;
 }
 
 /*Banners Receta*/

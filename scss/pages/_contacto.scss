@@ -82,3 +82,31 @@ form {
     
 }
 
+.banner-contacto {
+  @include margenes;
+  @include flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.banner-contacto2 {
+  background-color: map-get($colores, fondo-primario);
+  @include margenes;
+  @include flex;
+}
+/*cajas contacto*/
+#cajas-contacto {
+  display: flex;
+  justify-content: space-between;
+  font-size: 21px;
+  @include margenes;
+  .caja-contacto {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    margin-right: 10px;
+    img {
+      @include recorte-img;
+      @include bordes-redondeados($radio-bordes);
+    }
+  }
+}

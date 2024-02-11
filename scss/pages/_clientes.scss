@@ -26,34 +26,99 @@
   
   #cajas-insertadas-cliente {
     @include flex;
-    flex-wrap: wrap;
-    margin-top: 30px;
-
+   
     
   }
+  /*Caja1*/
+  .caja1-clientes {
+      
+      flex: 1;
+      h2 {
+        background-color: map-get($colores, fondo-primario);
+        @include margenes-banner
+      }
+      
+      ul {
+        color: map-get($colores,texto-secundario );
+      }
+      li {
+        animation: desplazamiento_derecha 1s ease forwards;
+    font-size: 20px;
+    list-style-type:decimal;
+    list-style-position: inside;
+    text-align:start;
+    margin-left: 480px;
+      }
+      p{
+        @include margenes-banner;
+        animation: desplazamiento_derecha 1s ease forwards;
+    
+    font-size: 21px;
+   
+    text-align: center;
+      }
+      
+  }
+  /*Caja3*/
   .caja3-clientes {
     flex: 1;
     text-align: center;
-    p{
+    p{ 
         margin: 20px;   
     flex: 1;
     font-size: 21px;
     max-width: 100%;
     text-align: center;
+    
     }
     ul {
         color: map-get($colores,texto-secundario );
     }
     li {
-        font-size: 20px;
-    list-style-type: circle;
-    list-style-position: inside;
-    text-align: center;
+      animation: desplazamiento_derecha 1s ease forwards;
+      font-size: 20px;
+      list-style-type: circle;
+      list-style-position: inside;
+      text-align:start;
+      margin-left: 540px;
     }
-
-}
+  }
   #banner1-cliente {
     background-color: map-get($colores, fondo-primario);
     @include margenes-banner;
-}
-  
+  }
+/*Seccion Canje*/
+  #caja-canje {
+    display: flex;
+    .caja4-clientes {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+        .mitad2 {
+          width: 50%;
+          text-align: center;
+          margin-top: 20px;
+          margin-right: 65px;
+          font-size: 21px;
+          p {
+            animation: desplazamiento_derecha 1s ease forwards;
+          }
+        }
+        .mitad1 {
+          @include flex;
+          width: 50%;
+          padding: 20px;
+          @include margenes-banner;
+          img {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+            @include bordes-redondeados($radio-bordes);
+            
+          }
+        }
+    }
+  }
