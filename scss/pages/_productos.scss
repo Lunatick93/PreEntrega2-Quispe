@@ -10,6 +10,7 @@
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+    animation: arriba 1s ease forwards;
     
 }
 
@@ -39,24 +40,11 @@
     gap: 20px;
     justify-content: space-between;
     margin-right: 40px;
-    .aqua1 {
+    .aqua1,.aqua2,.aqua3,.aqua4,.aqua5,.aqua6 {
         @include imagen-productos2;
+        animation: desplazamiento_derecha 1s ease forwards;
     }
-    .aqua2 {
-        @include imagen-productos2;
-    }
-    .aqua3 {
-        @include imagen-productos2;
-    }
-    .aqua4 {
-        @include imagen-productos2;
-    }
-    .aqua5 {
-        @include imagen-productos2;
-    }
-    .aqua6 {
-        @include imagen-productos2;
-    }
+    
 }
 .aqua-img {
     height: 650px;
@@ -81,25 +69,14 @@
     gap: 20px;
     justify-content: space-between;
     margin-left: 40px;
-    .terra1 {
+    .terra1,.terra2,.terra3,.terra4,.terra5 {
         @include imagen-productos2;
-    }
-    .terra2 {
-        @include imagen-productos2;
-    }
-    .terra3 {
-        @include imagen-productos2;
-    }
-    .terra4 {
-        @include imagen-productos2;
-    }
-    .terra5 {
-        @include imagen-productos2;
+        animation: desplazamiento_izquierda 1s ease forwards;
     }
     .terra6 {
         @include imagen-productos2;
         img {background-color: map-get($colores, texto-secundario);}
-        
+        animation: desplazamiento_izquierda 1s ease forwards;
     }
 }
 .terra-img {

@@ -29,6 +29,7 @@
    
     
   }
+  img {animation: arriba 1s ease forwards;}
   /*Caja1*/
   .caja1-clientes {
       
@@ -117,6 +118,7 @@
             width: auto;
             height: auto;
             @include bordes-redondeados($radio-bordes);
+            animation: desplazamiento_izquierda 1s ease forwards;
             
           }
         }
