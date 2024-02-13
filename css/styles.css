@@ -1001,7 +1001,7 @@ img {
     width: 100px;
   }
 }
-/*estilo del body para mobile*/
+/*estilo para mobile*/
 @media (max-width: 767px) {
   .caja2 {
     font-size: 1em;
@@ -1054,6 +1054,8 @@ img {
     flex-flow: row wrap;
     gap: 20px;
     justify-content: center;
+    max-width: 100%;
+    overflow-x: hidden;
   }
   #cajas-insertadas .caja1,
   #cajas-insertadas .caja2 {
@@ -1166,12 +1168,18 @@ img {
     margin-bottom: 10px;
   }
   /*Productos mobile*/
+  #productos-linea {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
   .lineas-productos h2 {
     margin: 0;
     margin-top: 20px;
   }
   #cajas-de-aqua {
     margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
   }
   .aqua-img {
     margin: 0;
@@ -1230,6 +1238,8 @@ img {
   }
   /*Clientes Mobile*/
   .caja1-clientes {
+    max-width: 100%;
+    overflow-x: hidden;
     margin: 0;
   }
   .caja1-clientes h2 {
@@ -1248,6 +1258,10 @@ img {
     margin: 0;
     font-size: 1em;
     list-style-position: initial;
+  }
+  #caja-canje {
+    max-width: 100%;
+    overflow-x: hidden;
   }
   #caja-canje .caja4-clientes {
     display: flex;
@@ -1281,6 +1295,8 @@ img {
     display: block;
   }
   #cajas-insertadas-cliente .caja3-clientes {
+    max-width: 100%;
+    overflow-x: hidden;
     flex: none;
   }
   #cajas-insertadas-cliente .caja3-clientes p {

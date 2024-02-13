@@ -22,7 +22,7 @@
     }
 }
 
-/*estilo del body para mobile*/
+/*estilo para mobile*/
 @media (max-width: 767px) {
     .caja2 {
         font-size: 1em;
@@ -68,8 +68,6 @@
         background-size: cover;
         background-repeat: no-repeat;
         
-        
-        
     }
 
     #cajas-insertadas {
@@ -77,6 +75,8 @@
         flex-flow: row wrap;
         gap: 20px;
         justify-content: center;
+        max-width: 100%;
+        overflow-x: hidden;
       
         .caja1,
         .caja2 {
@@ -182,11 +182,17 @@
     }
 
     /*Productos mobile*/
+    #productos-linea {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
     .lineas-productos { 
         h2 {margin: 0;margin-top: 20px;}
     }
     #cajas-de-aqua {
         margin: 0;
+        max-width: 100%;
+        overflow-x: hidden;
     }
     .aqua-img {margin: 0; margin-top: 130px; width: 50%; margin-left: 6px;}
     #caja-linea-aqua {
@@ -221,6 +227,8 @@
 
     /*Clientes Mobile*/
     .caja1-clientes {
+        max-width: 100%;
+        overflow-x: hidden;
         margin: 0;
         h2 {margin: 0;} 
         p{font-size: 1em; margin: 0; margin-top: 10px;}
@@ -228,7 +236,8 @@
         li {margin: 0;font-size: 1em; list-style-position: initial;}}
     }
     #caja-canje {
-        
+        max-width: 100%;
+        overflow-x: hidden;
         .caja4-clientes {
             @include flex;
             flex-direction: column;
@@ -254,6 +263,8 @@
    #cajas-insertadas-cliente{
     display: block;
     .caja3-clientes {
+        max-width: 100%;
+        overflow-x: hidden;
         flex: none;
         
         p{font-size: 1em; }
